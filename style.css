@@ -1,0 +1,478 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+ul{
+  list-style: none;
+}
+img{
+  max-width: 100%;
+  object-fit: cover;
+}
+.header {
+  background-image: url(img/bg-main.png);
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+.menu-btn{
+  display: none;
+}
+.menu {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: -15px;
+  left: 0;
+  z-index: 50;
+  background-color: #121212;
+  opacity: 0.7;
+}
+.kont {
+  margin: 65px 0 0 100px;
+}
+
+.phone {
+  color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.adres {
+  color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.list {
+  display: flex;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.punkt {
+  color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 50px;
+}
+.logo {
+  margin: 25px 0 0 50px;
+}
+.btn{
+  border-radius: 54px;
+    background: #FFF;
+    padding: 15px 25px;
+    color: #000;
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 400px 0 330px 200px;
+}
+.s1 {
+  background: #121212;
+  margin-top: -105px;
+  padding: 0 0 20px 0;
+}
+.top-onas {
+  display: flex;
+}
+
+.text-onas {
+  color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 230px 0 0 130px;
+}
+.top-onas img{
+  margin: 50px;
+}
+.bot-onas {
+  background: #121212;
+}
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.slider .slick-arrow.slick-prev {
+  left: 120px;
+  background: url(img/linkc.svg) 0 0 /100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 120px;
+  background: url(img/reht.svg) 0 0 /100% no-repeat;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+.slick-dots li {
+  list-style: none;
+  margin: 0 20px;
+}
+.slick-dots li.slick-active button {
+  width: 25px;
+  height: 25px;
+}
+.slick-dots li button {
+  font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider{
+  position: relative;
+  padding: 0 400px;
+}
+.slider .slick-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 24px;
+}
+.s2{
+  background: #121212;
+  padding: 50px;
+}
+.titl-s2{
+  color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 32px
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 3px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+  z-index: -1;
+  transition: .5s;
+}
+
+.card:hover::after {
+  transform: rotate(10deg);
+}
+
+.card:hover::before {
+  transform: rotate(20deg);
+}
+
+.card .imgBox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #101010;
+  z-index: 1;
+  transition: .5s;
+}
+
+.card:hover .imgBox {
+  bottom: 75px;
+}
+
+.card .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.card .details {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 55px;
+}
+
+.card .details h2 {
+  margin-top: 5px;
+  padding: 0;
+  font-weight: 900;
+  font-size: 20px;
+  color: #101010;
+  text-align: center;
+  line-height: 1.15em;
+}
+
+.card .details h2 span {
+  font-weight: 400;
+  font-size: 15px;
+  color: #0dac4f;
+}
+.kontakt{
+  background: url(img/bg-zakaz.png);
+  display: flex;
+  justify-content: space-between;
+}
+.for-bg{
+  background-color: #fff;
+    width: 570px;
+    height: 500px;
+    opacity: 0.3;
+    border-radius: 25px;
+    text-align: center;
+}
+.namme{
+  margin: 70px 0 15px;
+  width: 481px;
+    height: 108px;
+    border-radius: 54px;
+    background: #C4C4C4;
+    padding-left: 25px;
+}
+.tell{
+  width: 481px;
+    height: 108px;
+    border-radius: 54px;
+    background: #C4C4C4;
+    padding-left: 25px;
+}
+.form-zak{
+  width: 303px;
+    height: 55px;
+    flex-shrink: 0;
+    color: #000;    
+      text-align: center;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 70px;
+      cursor: pointer;
+}
+.tit-kon{
+  color: #FFF;  
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+}
+.recht-kon {
+  width: 569px;
+  height: 360px;
+  border-radius: 52px;
+  opacity: 0.5;
+  background: #979292;
+  text-align: center;
+  margin-top: 155px;
+}
+
+.tel-rech {
+  width: 504px;
+  color: #FFF;  
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.mail-rech {
+  width: 504px;
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.adfes {
+  width: 504px;
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+hr{
+  width: 492px;
+  height: 7px;
+  color: #FFF;
+}
+
+@media (max-width: 1025px) {
+  .kont {
+    display: none;
+      margin: 65px 0 0 0px;
+    }
+    .punkt {
+      margin-left: 20px;
+    }
+        .top-onas {
+          display: block;
+        }
+    .text-onas {
+      margin: 0 20px;
+    }
+        .top-onas img {
+          margin: 0 auto;
+          display: flex;
+        }
+                .slider {
+                  padding: 20px 160px;
+                }
+        .kontakt {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+  }   
+@media (max-width: 950px) {
+.menu-btn{
+  display: block;
+  margin: 60px 0 0 50px;
+}
+.menu-btn {
+  display: block;
+  width: 40px;
+  height: 30px;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+  background: transparent;
+}
+
+.menu-btn span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFF;
+}
+
+.menu-btn span:first-child {
+  top: 0;
+}
+
+.menu-btn span:last-child {
+  top: auto;
+  bottom: 0;
+}
+.link{
+  display: none;
+}
+.link--active {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  right: 46px;
+  flex-direction: column;
+  top: 30px;
+  
+}
+.logo {
+  margin-left: 400px;
+}
+}
+@media (max-width: 480px) {
+  .logo {
+      margin-left: 65px;
+    }
+        .menu {
+          width: auto;
+        }
+        .btn{
+          margin: 200px 0 230px 90px;
+        }
+        .link--active {
+         right: 10px;
+         top: 77px;
+        }
+        .text-onas{
+          font-size: 35px;
+          padding: 0 10px;
+        }
+        .tit-kon{
+          font-size: 30px;
+        }
+                .namme {
+                  width: 370px;
+                  height: 90px;
+                }
+      .tell{
+        width: 370px;
+          height: 90px;
+      }
+            .recht-kon {
+              width: 408px;
+              height: 300px;
+              margin-top: 60px;
+            }
+            .mail-rech{
+              font-size: 31px;
+              width: 400px;
+              margin-top: 2px;
+            }
+                         .tel-rech {
+                           font-size: 31px;
+                           width: 400px;
+                           margin-top: 2px;
+                         }
+                         .adfes{
+                          font-size: 31px;
+                            width: 400px;
+                            margin-top: 2px;
+                         }
+}
